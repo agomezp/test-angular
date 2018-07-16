@@ -19,8 +19,8 @@ import { RegisterComponent } from './login/register.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES,
-    PagesModule
+    PagesModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
