@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';
 
 import { PAGES_ROUTES } from './pages.routes';
 
@@ -9,22 +11,28 @@ import { PagesComponent } from './pages.component';
 
 import { SharedModule } from '../shared/shared.module';
 
+// Temporal
+import { ProgressbarComponent } from '../components/progressbar/progressbar.component';
+
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graphics1Component
+        Graphics1Component,
+        ProgressbarComponent
     ],
     exports: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graphics1Component
+        Graphics1Component,
+        ProgressbarComponent
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 
