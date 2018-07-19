@@ -1,6 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { PAGES_ROUTES } from './pages.routes';
 
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
 
 // Temporal
 import { ProgressbarComponent } from '../components/progressbar/progressbar.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
 @NgModule({
     declarations: [
@@ -20,19 +22,22 @@ import { ProgressbarComponent } from '../components/progressbar/progressbar.comp
         DashboardComponent,
         ProgressComponent,
         Graphics1Component,
-        ProgressbarComponent
+        ProgressbarComponent,
+        GraficoDonaComponent
     ],
     exports: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
         Graphics1Component,
-        ProgressbarComponent
+        ProgressbarComponent,
+        GraficoDonaComponent
     ],
     imports: [
         SharedModule,
         PAGES_ROUTES,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ]
 })
 
