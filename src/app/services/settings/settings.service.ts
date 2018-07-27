@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { DOCUMENT } from '../../../node_modules/@angular/platform-browser';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
